@@ -75,7 +75,7 @@ class chatbot(discord.Client):
             if num==11:
                 asw="미안 내가 너무,,,매력적이지?"
                 await channel.send(asw)
-                sw="우리 꼬마아가씨,,"
+                asw="우리 꼬마아가씨,,"
                 await channel.send(asw)
                 asw="그래도 나 임자있으니까"
                 await channel.send(asw)
