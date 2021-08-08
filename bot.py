@@ -25,7 +25,7 @@ class chatbot(discord.Client):
         content=message.content
         if content==content:
             channel = message.channel
-            num=random.randint(1,4)
+            num=random.randint(1,17)
             if num==1:
                 asw="어?"
                 await channel.send(asw)
