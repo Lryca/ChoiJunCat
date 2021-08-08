@@ -17,6 +17,7 @@ async def on_ready():
   #await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="영상 시청중"))
   
   print("귀엽네")
+  client.run(os.environ['token'])
 
 @client.event
 async def on_message(message):
@@ -112,7 +113,3 @@ async def on_message(message):
             asw="우리 집에서 고양이 보고 갈래?"
             await channel.send(asw)
             return None
-        
-        
-
-client.run(os.environ['token'])
