@@ -8,7 +8,7 @@ class chatbot(discord.Client):
     async def on_ready(self):
         # 상태 메시지 설정
         # 종류는 3가지: Game, Streaming, CustomActivity
-        game = discord.Game("유혹")
+        game = discord.Game("자랑")
 
         # 계정 상태를 변경한다.
         # 온라인 상태, game 중으로 설정
@@ -19,7 +19,8 @@ class chatbot(discord.Client):
 
     async def on_message(self, message):
         # SENDER가 BOT일 경우 반응을 하지 않도록 한다.
-        if message.author.user:
+        content=message.content
+        if content==content:
             channel = message.channel
             num=random.randint(1,4)
             if num==1:
