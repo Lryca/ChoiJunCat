@@ -83,7 +83,7 @@ class chatbot(discord.Client):
                 await channel.send(asw)
                 return None
             if num==12:
-                asw="잘 부탁하 꼬마아가씨^^"
+                asw="잘 부탁해 꼬마아가씨^^"
                 await channel.send(asw)
                 return None
             if num==13:
