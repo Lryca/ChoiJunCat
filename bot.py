@@ -25,7 +25,7 @@ class chatbot(discord.Client):
         content=message.content
         if content==content:
             channel = message.channel
-            num=random.randint(1,17)
+            num=random.randint(1,21)
             if num==1:
                 asw="어?"
                 await channel.send(asw)
@@ -112,6 +112,22 @@ class chatbot(discord.Client):
                 return None
             if num==17:
                 asw="우리 집에서 고양이 보고 갈래?"
+                await channel.send(asw)
+                return None
+            if num==18:
+                asw="철이 없었죠… 커피가 좋아서 유학을 했다는 자체가…"
+                await channel.send(asw)
+                return None
+            if num==19:
+                asw="별자리 뭐에요? 난 당신 옆자리."
+                await channel.send(asw)
+                return None
+            if num==20:
+                asw="아, 미안해요. 내가 사랑 앞엔 저돌적이라."
+                await channel.send(asw)
+                return None
+            if num==21:
+                asw="자꾸 쳐다보지 마세요. 키스할 뻔 했습니다."
                 await channel.send(asw)
                 return None
 
